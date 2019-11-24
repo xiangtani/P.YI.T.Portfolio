@@ -158,7 +158,7 @@ footer {
   padding: 8em 0;
   padding-left: 13em;
   padding-right: 13em;
-  z-index: 0;
+  z-index: 1;
 }
 
 footer:before {
@@ -169,9 +169,9 @@ footer:before {
   height: 925px;
   border-radius: 925px;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  top: -100%;
+  top: 20%;
   left: 51%;
-  z-index: -1;
+  z-index: -2;
 }
 
 footer:after {
@@ -199,6 +199,7 @@ footer .footer__contact {
   padding-top: 2em;
   margin-left: 60em;
   color: #fff;
+  z-index: 1;
 }
 
 footer .footer__contact:before {
@@ -211,7 +212,7 @@ footer .footer__contact:before {
   background-color: #ff8602;
   top: -10%;
   left: 20%;
-  z-index: -1;
+  z-index: -2;
 }
 
 footer .footer__contact:after {
@@ -360,7 +361,7 @@ footer .footer__logo p {
 }
 
 .container header a {
-  z-index: 5;
+  z-index: 999;
 }
 
 .container header a img {
@@ -506,8 +507,8 @@ footer .footer__logo p {
 .container .skill {
   display: inline-block;
   padding-bottom: 17em;
-  padding-left: 13em;
-  padding-right: 13em;
+  padding-left: 13%;
+  padding-right: 13%;
   color: #fff;
   background-color: #5f8080;
 }
@@ -547,8 +548,8 @@ footer .footer__logo p {
 .container .work {
   display: inline-block;
   position: relative;
-  padding-left: 13em;
-  padding-right: 13em;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 5em;
   background-color: #dbd5c9;
   color: #325454;
@@ -601,7 +602,8 @@ footer .footer__logo p {
 .container .work__date {
   display: inline-block;
   width: 62%;
-  margin-left: 22em;
+  margin-left: 30%;
+  margin-right: 15%;
   padding-bottom: 5em;
   position: relative;
 }
@@ -639,7 +641,7 @@ footer .footer__logo p {
 .container .project__main__web {
   background-color: #dbd5c9;
   color: #325454;
-  padding-bottom: 15em;
+  padding-bottom: 4em;
 }
 
 .container .project__main__web h1 {
@@ -658,6 +660,7 @@ footer .footer__logo p {
   border: 1px solid rgba(255, 255, 255, 0.2);
   top: 8.5%;
   left: 52.3%;
+  z-index: -1;
 }
 
 .container .project__main__web p.en {
@@ -708,8 +711,8 @@ footer .footer__logo p {
 }
 
 .container .web__other {
-  padding-left: 6em;
-  padding-right: 6em;
+  padding-bottom: 9em;
+  z-index: 2;
 }
 
 .container .web__other h2.en {
@@ -717,6 +720,7 @@ footer .footer__logo p {
   width: 60%;
   padding-bottom: .6em;
   margin-top: -.5em;
+  margin-left: 7%;
 }
 
 .container .web__other p {
@@ -726,6 +730,7 @@ footer .footer__logo p {
 
 .container .web__other .other__content {
   color: #fff;
+  margin-left: 7%;
 }
 
 .container .web__other .other__content h3 {
@@ -734,6 +739,7 @@ footer .footer__logo p {
 }
 
 .container .web__other .other__content p {
+  padding-top: 1.6em;
   padding-right: 12em;
   letter-spacing: .1em;
 }
@@ -744,15 +750,51 @@ footer .footer__logo p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 5em;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 8em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.container .web__other .main__other__link img {
+.container .web__other .main__other__link a {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  position: relative;
+  z-index: 1;
+}
+
+.container .web__other .main__other__link a:hover:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #ff8602;
+  top: 60%;
+  right: 0;
+  z-index: 2;
+}
+
+.container .web__other .main__other__link a:hover:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 300px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #5f8080;
+  top: -20%;
+  left: 20%;
+  z-index: -1;
+}
+
+.container .web__other .main__other__link a img {
   width: 450px;
   padding-bottom: 5em;
 }
@@ -770,19 +812,9 @@ footer .footer__logo p {
   left: 0;
 }
 
-.container header:before {
-  display: inline-block;
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 54.5%;
-  background-color: rgba(54, 87, 87, 0.2);
-}
-
 .container .project__detail {
   background-color: #eaeaea;
+  z-index: -2;
 }
 
 .container .project__detail:after {
@@ -795,6 +827,7 @@ footer .footer__logo p {
   border: 1px solid rgba(54, 87, 87, 0.2);
   top: 4.5%;
   left: 52.3%;
+  z-index: -1;
 }
 
 .container .project__detail__computer {
@@ -814,8 +847,8 @@ footer .footer__logo p {
 
 .container .project__detail__content {
   color: #325454;
-  padding-right: 28em;
-  padding-left: 28em;
+  padding-right: 25%;
+  padding-left: 25%;
 }
 
 .container .project__detail__content p {
@@ -853,23 +886,30 @@ footer .footer__logo p {
   padding-top: 2em;
   padding-bottom: 10em;
   line-height: 2em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container .project__detail__content__two img {
+  margin: auto;
 }
 
 .container .project__detail__content__two div {
-  padding-left: 14em;
-  padding-right: 14em;
+  padding-left: 12%;
   padding-bottom: 4em;
 }
 
 .container .project__detail__content__two div div {
   display: inline-block;
-  width: 34%;
+  padding-right: 3%;
+  width: 25%;
   vertical-align: top;
 }
 
 .container .project__detail__content__two div ul {
   display: inline-block;
-  padding-left: 2em;
+  width: 50%;
+  padding-left: 2%;
 }
 
 .container .project__detail__content__two div ul li {
@@ -884,17 +924,12 @@ footer .footer__logo p {
   width: 8px;
   height: 8px;
   border-radius: 8px;
+  left: 0;
   top: 50%;
   bottom: -50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  left: 0;
   background-color: #ff8602;
-}
-
-.container .project__detail__content__two img {
-  padding-left: 6em;
-  padding-right: 6em;
 }
 
 .container .other__project__three {
@@ -904,15 +939,17 @@ footer .footer__logo p {
 }
 
 .container .other__project__three h2 {
-  padding-left: .6em;
+  padding-left: 7%;
 }
 
 .container .other__project__three h3 {
   padding-top: 1em;
+  padding-left: 7%;
 }
 
 .container .other__project__three p {
   padding-right: 2em;
+  padding-left: 7%;
   padding-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */

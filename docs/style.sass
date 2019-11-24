@@ -42,7 +42,7 @@
         left: 54.5%
         background-color: rgba(255,255,255,0.2)
     a
-      z-index: 5
+      z-index: 999
       img 
         width: 5%
     
@@ -143,8 +143,8 @@
   .skill 
     display: inline-block
     padding-bottom: 17em
-    padding-left: 13em
-    padding-right: 13em
+    padding-left: 13%
+    padding-right: 13%
     color: $color-white
     background-color: $color-green
     h2 
@@ -169,8 +169,8 @@
   .work 
     display: inline-block
     position: relative
-    padding-left: 13em
-    padding-right: 13em
+    padding-left: 10%
+    padding-right: 10%
     padding-bottom: 5em
     background-color: $color-gray-y
     color: $color-green-b
@@ -211,7 +211,8 @@
     &__date 
       display: inline-block
       width: 62%
-      margin-left: 22em
+      margin-left: 30%
+      margin-right: 15%
       padding-bottom: 5em
       position: relative
       ul 
@@ -240,7 +241,7 @@
   .project__main__web
     background-color: $color-gray-y
     color: $color-green-b
-    padding-bottom: 15em
+    padding-bottom: 4em
     h1 
       padding-left: .5em
       position: relative
@@ -255,6 +256,7 @@
         border: 1px solid rgba(255,255,255,0.2)
         top: 8.5%
         left: 52.3%
+        z-index: -1
     p.en
       margin-right: 20em
       padding-top: 1.6em
@@ -285,34 +287,68 @@
           bottom: 15%
           z-index: 3
   .web__other 
-    padding-left: 6em 
-    padding-right: 6em
+    padding-bottom: 9em
+    z-index: 2
     h2 
       &.en 
         color: $color-white
         width: 60%
         padding-bottom: .6em
         margin-top: -.5em
+        margin-left: 7%
     p 
       display: inline-block
       text-align: left
     .other__content
       color: $color-white
+      margin-left: 7%
       h3 
         letter-spacing: .3em 
         padding-bottom: .5em
       p 
+        padding-top: 1.6em
         padding-right: 12em 
         letter-spacing: .1em
     .main__other__link
       display: flex
       flex-wrap: wrap
-      align-content: flex-start
-      justify-content: space-between
-      padding-top: 5em
-      img 
-        width: 450px
-        padding-bottom: 5em
+      align-content: stretch
+      justify-content: flex-start
+      padding-top: 8em
+      margin-left: 5%
+      margin-right: 5%
+      a
+        padding-left: 1.5%
+        padding-right: 1.5%
+        position: relative
+        z-index: 1
+        &:hover 
+          &:before 
+            display: block
+            content: ''
+            position: absolute
+            width: 100px
+            height: 100px 
+            border-radius: 100px
+            background-color: $color-orange
+            top: 60%
+            right: 0
+            z-index: 2
+          &:after
+            display: block
+            content: ''
+            position: absolute
+            width: 2px
+            height: 300px 
+            transform: rotate(45deg)
+            background-color: $color-green
+            top: -20%
+            left: 20%
+            z-index: -1
+        img 
+          width: 450px
+          padding-bottom: 5em
+        
   header
     &.bg__gray
       div
@@ -324,17 +360,10 @@
           color: $color-orange
           line-height: 1.3em
           left: 0
-    &:before
-      display: inline-block
-      content: ''
-      position: absolute
-      width: 1px 
-      height: 100%
-      top: 0
-      left: 54.5%
-      background-color: rgba(54,87,87,0.2)
+    
   .project__detail
     background-color: $color-gray
+    z-index: -2
     &:after
       display: inline-block
       content: ''
@@ -345,6 +374,7 @@
       border: 1px solid rgba(54,87,87,0.2)
       top: 4.5%
       left: 52.3%
+      z-index: -1
     &__computer
       position: relative   
       img 
@@ -357,8 +387,8 @@
           right: 10%
     &__content
       color: $color-green-b
-      padding-right: 28em
-      padding-left: 28em
+      padding-right: 25%
+      padding-left: 25%
       p
         position: relative
         &.en
@@ -386,17 +416,22 @@
       padding-top: 2em
       padding-bottom: 10em
       line-height: 2em
+      margin-left: 5%
+      margin-right: 5%
+      img 
+        margin: auto
       div
-        padding-left: 14em
-        padding-right: 14em
+        padding-left: 12%
         padding-bottom: 4em
         div 
           display: inline-block
-          width: 34%
+          padding-right: 3%
+          width: 25%
           vertical-align: top
         ul 
           display: inline-block
-          padding-left: 2em
+          width: 50%
+          padding-left: 2%
           li 
             position: relative
             padding-left: 1.3em
@@ -407,25 +442,36 @@
               width: 8px
               height: 8px 
               border-radius: 8px
-              top: 50%
-              bottom: -50%
-              transform: translate(50%,-50%)
               left: 0
+              top: 50%
+              bottom: -50% 
+              transform: translate(50%, -50%)
               background-color: $color-orange
       img 
-        padding-left: 6em
-        padding-right: 6em
   .other__project__three
     color: $color-green-b
     background-color: $color-gray
     padding-bottom: 5em
+    // &:before
+    //   display: inline-block
+    //   content: ''
+    //   position: absolute
+    //   width: 1px 
+    //   height: 100%
+    //   top: 0
+    //   left: 54.5%
+    //   background-color: rgba(54,87,87,0.08)
+    //   z-index: -1
     h2 
-      padding-left: .6em
+      padding-left: 7%
     h3 
       padding-top: 1em
+      padding-left: 7%
     p 
       padding-right: 2em
+      padding-left: 7%
       padding-top: 1em
+    
     
     
 
