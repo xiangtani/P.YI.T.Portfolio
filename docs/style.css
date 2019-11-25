@@ -942,6 +942,15 @@ footer .footer__logo p {
   padding-bottom: 4em;
 }
 
+.container .project__detail__content__two div a {
+  color: #ff8602;
+  font-weight: 700;
+}
+
+.container .project__detail__content__two div a:hover {
+  color: #5f8080;
+}
+
 .container .project__detail__content__two div div {
   display: inline-block;
   padding-right: 3%;
