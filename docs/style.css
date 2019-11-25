@@ -401,7 +401,7 @@ footer .footer__logo p {
 .container .introduction__web p {
   letter-spacing: 1em;
   color: rgba(255, 255, 255, 0.5);
-  margin-right: 17.5em;
+  margin-right: 17.5%;
   padding-top: 1.6em;
 }
 
@@ -409,24 +409,24 @@ footer .footer__logo p {
   display: inline-block;
   width: 17%;
   padding-top: 3em;
-  padding-left: 60em;
-}
-
-.container .introduction__i h3 {
-  letter-spacing: .3em;
-  padding-bottom: 1em;
+  padding-left: 60%;
   position: relative;
 }
 
-.container .introduction__i h3:before {
+.container .introduction__i:before {
   display: block;
   content: '';
   position: absolute;
   width: 76px;
   height: 3px;
   top: 25%;
-  left: -66.3%;
+  left: 65%;
   background-color: #fff;
+}
+
+.container .introduction__i h3 {
+  letter-spacing: .3em;
+  padding-bottom: 1em;
 }
 
 .container .introduction__i p {
@@ -436,6 +436,12 @@ footer .footer__logo p {
 .container .project {
   background-color: #5f8080;
   color: #fff;
+  position: relative;
+}
+
+.container .project .button {
+  position: absolute;
+  right: 0;
 }
 
 .container .project__main {
@@ -525,11 +531,6 @@ footer .footer__logo p {
 
 .container .project__other__link figure h2 {
   padding-top: 2em;
-}
-
-.container .project__other .button {
-  position: absolute;
-  right: 4.5%;
 }
 
 .container .skill {
@@ -743,6 +744,15 @@ footer .footer__logo p {
 .container .web__other {
   padding-bottom: 9em;
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .container .web__other h2.en {
@@ -750,7 +760,6 @@ footer .footer__logo p {
   width: 60%;
   padding-bottom: .6em;
   margin-top: -.5em;
-  margin-left: 7%;
 }
 
 .container .web__other p {
@@ -760,7 +769,6 @@ footer .footer__logo p {
 
 .container .web__other .other__content {
   color: #fff;
-  margin-left: 7%;
 }
 
 .container .web__other .other__content h3 {
@@ -770,7 +778,6 @@ footer .footer__logo p {
 
 .container .web__other .other__content p {
   padding-top: 1.6em;
-  padding-right: 12em;
   letter-spacing: .1em;
 }
 
@@ -780,19 +787,17 @@ footer .footer__logo p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   padding-top: 8em;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .container .web__other .main__other__link a {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
   position: relative;
   z-index: 1;
 }
@@ -829,11 +834,15 @@ footer .footer__logo p {
   padding-bottom: 5em;
 }
 
-.container header.bg__gray div {
+.container {
+  background-color: #eaeaea;
+}
+
+.container header div {
   position: relative;
 }
 
-.container header.bg__gray div p {
+.container header div p {
   display: inline-block;
   position: absolute;
   text-align: left;
@@ -843,7 +852,6 @@ footer .footer__logo p {
 }
 
 .container .project__detail {
-  background-color: #eaeaea;
   z-index: -2;
 }
 
@@ -877,8 +885,8 @@ footer .footer__logo p {
 
 .container .project__detail__content {
   color: #325454;
-  padding-right: 25%;
-  padding-left: 25%;
+  padding-right: 22%;
+  padding-left: 22%;
 }
 
 .container .project__detail__content p {
@@ -913,11 +921,16 @@ footer .footer__logo p {
 
 .container .project__detail__content__two {
   color: #325454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 2em;
   padding-bottom: 10em;
   line-height: 2em;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .container .project__detail__content__two img {
@@ -972,14 +985,19 @@ footer .footer__logo p {
   padding-left: 7%;
 }
 
-.container .other__project__three h3 {
-  padding-top: 1em;
-  padding-left: 7%;
+.container .other__project__three .other__content {
+  color: #325454;
 }
 
-.container .other__project__three p {
-  padding-right: 2em;
-  padding-left: 7%;
+.container .other__project__three .other__content h3 {
+  padding-top: 1em;
+}
+
+.container .other__project__three .other__content p.en {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20%;
+  padding-right: 4em;
   padding-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */

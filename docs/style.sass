@@ -72,32 +72,38 @@
       p 
         letter-spacing: 1em
         color: rgba(255,255,255,0.5)
-        margin-right: 17.5em
+        margin-right: 17.5%
         padding-top: 1.6em
 
     &__i
       display: inline-block
       width: 17%
       padding-top: 3em
-      padding-left: 60em
-      h3 
-        letter-spacing: .3em
-        padding-bottom: 1em
-        position: relative
-        &:before 
+      padding-left: 60%
+      position: relative
+      &:before 
           display: block 
           content: ''
           position: absolute
           width: 76px
           height: 3px 
           top: 25%
-          left: -66.3%
+          left: 65%
           background-color: $color-white
+      h3 
+        letter-spacing: .3em
+        padding-bottom: 1em
+        
+        
       p 
         line-height: 1.8em
   .project 
     background-color: $color-green
-    color: $color-white
+    color: $color-white  
+    position: relative
+    .button 
+        position: absolute
+        right: 0
     &__main 
       position: relative
       margin-bottom: 4em
@@ -121,6 +127,7 @@
       padding-left: 13em
       padding-bottom: 10em
       position: relative
+      
       h3 
         letter-spacing: .3em
         padding-bottom: .5em
@@ -161,9 +168,8 @@
               z-index: -1
           h2 
             padding-top: 2em
-      .button 
-        position: absolute
-        right: 4.5%   
+        
+      
   .skill 
     display: inline-block
     padding-bottom: 17em
@@ -315,37 +321,38 @@
   .web__other 
     padding-bottom: 9em
     z-index: 2
+    display: flex
+    flex-direction: column
+    margin-left: 8%
+    margin-right: 8%
     h2 
       &.en 
         color: $color-white
         width: 60%
         padding-bottom: .6em
         margin-top: -.5em
-        margin-left: 7%
     p 
       display: inline-block
       text-align: left
     .other__content
       color: $color-white
-      margin-left: 7%
       h3 
         letter-spacing: .3em 
         padding-bottom: .5em
       p 
         padding-top: 1.6em
-        padding-right: 12em 
         letter-spacing: .1em
     .main__other__link
       display: flex
       flex-wrap: wrap
-      align-content: stretch
-      justify-content: flex-start
+      justify-content: space-around
+      align-items: flex-start
+      align-content: space-around
       padding-top: 8em
-      margin-left: 5%
-      margin-right: 5%
+      
       a
-        padding-left: 1.5%
-        padding-right: 1.5%
+        // padding-left: 1.5%
+        // padding-right: 1.5%
         position: relative
         z-index: 1
         &:hover 
@@ -374,21 +381,20 @@
         img 
           width: 450px
           padding-bottom: 5em
-        
+.container 
+  background-color: $color-gray     
   header
-    &.bg__gray
-      div
-        position: relative
-        p 
-          display: inline-block
-          position: absolute
-          text-align: left
-          color: $color-orange
-          line-height: 1.3em
-          left: 0
+    div
+      position: relative
+      p 
+        display: inline-block
+        position: absolute
+        text-align: left
+        color: $color-orange
+        line-height: 1.3em
+        left: 0
     
   .project__detail
-    background-color: $color-gray
     z-index: -2
     &:after
       display: inline-block
@@ -413,8 +419,8 @@
           right: 10%
     &__content
       color: $color-green-b
-      padding-right: 25%
-      padding-left: 25%
+      padding-right: 22%
+      padding-left: 22%
       p
         position: relative
         &.en
@@ -439,11 +445,11 @@
             
     &__content__two
       color: $color-green-b
+      display: flex
+      flex-direction: column
       padding-top: 2em
       padding-bottom: 10em
       line-height: 2em
-      margin-left: 5%
-      margin-right: 5%
       img 
         margin: auto
       div
@@ -478,25 +484,17 @@
     color: $color-green-b
     background-color: $color-gray
     padding-bottom: 5em
-    // &:before
-    //   display: inline-block
-    //   content: ''
-    //   position: absolute
-    //   width: 1px 
-    //   height: 100%
-    //   top: 0
-    //   left: 54.5%
-    //   background-color: rgba(54,87,87,0.08)
-    //   z-index: -1
     h2 
       padding-left: 7%
-    h3 
-      padding-top: 1em
-      padding-left: 7%
-    p 
-      padding-right: 2em
-      padding-left: 7%
-      padding-top: 1em
+    .other__content
+      color: $color-green-b
+      h3
+        padding-top: 1em
+      p.en
+        flex-wrap: wrap
+        width: 20%
+        padding-right: 4em
+        padding-top: 1em
     
     
     
